@@ -107,17 +107,11 @@ namespace ActiveKiller
 			{
 				Visible = true,
 				Icon = System.Drawing.SystemIcons.Information,
-				// optional - BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info,
 				BalloonTipTitle = "ActiveKiller is running down here!",
 				BalloonTipText = "ActiveKiller is active and running down here\n\nRight click me for more options!",
 			};
-
-			// Display for 5 seconds.
 			notification.ShowBalloonTip(1500);
 			System.Threading.Thread.Sleep(2000);
-
-			// The notification should be disposed when you don't need it anymore,
-			// but doing so will immediately close the balloon if it's visible.
 			notification.Dispose();
 		}
 
