@@ -32,7 +32,6 @@ namespace ActiveKiller
 				File.CreateText(WhitelistContainerDirectory);
 			}
 
-
 			string line;
 
 			StreamReader file = new StreamReader(WhitelistContainerDirectory);
